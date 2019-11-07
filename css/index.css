@@ -171,19 +171,18 @@ img {
 .navigation {
   width: 100%;
   align-content: center;
-  margin: 20px 0;
-  padding: 20px 0;
-  display: flex;
   justify-content: space-between;
+  margin: 20px 0;
+  padding: 10px 0;
+  display: flex;
+  margin-right: 15%;
 }
 .navigation nav a {
   font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
-  margin: 20px;
+  margin: 30px;
   color: black;
-}
-.navigation h1 {
-  margin-left: 20px;
+  justify-content: space-around;
 }
 .footer {
   width: 100%;
@@ -247,20 +246,26 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  border: 2px solid black;
 }
-.top-bar {
+#head .top-bar {
   display: flex;
   justify-content: space-evenly;
-  width: 65%;
+  border-bottom: 2px dashed #C0C0C0;
+  width: 100%;
   margin-bottom: 0;
 }
-.banner {
+#head .top-bar h1 {
+  margin-left: 18%;
+}
+.banner img {
+  margin-top: 3%;
   width: 65%;
-  margin-top: 0;
-  border-top: 2px dashed #C0C0C0;
+  margin-left: 18%;
+  margin-bottom: 3%;
 }
 .info {
-  width: 65%;
   margin-top: 3%;
+  border-bottom: 2px dashed #C0C0C0;
+  width: 65%;
+  margin: 0 auto 20px;
 }
