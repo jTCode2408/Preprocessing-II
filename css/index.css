@@ -170,10 +170,8 @@ img {
 }
 .container .btn {
   display: block;
-  background-color: teal;
-  margin: 0 10px 20px;
-  cursor: pointer;
-  width: 150px;
+  background-color: #19bbbb;
+  width: 85%;
   height: 45px;
   font-size: 2rem;
   border-radius: 10px;
@@ -182,9 +180,7 @@ img {
 @media (max-width: 500px) {
   .container .btn {
     display: block;
-    background-color: teal;
-    margin: 0 10px 20px;
-    cursor: pointer;
+    background-color: #19bbbb;
     width: 80%;
     height: 45px;
     font-size: 2rem;
@@ -223,7 +219,8 @@ img {
 }
 @media (max-width: 500px) {
   .navigation nav a {
-    margin: 17px;
+    justify-content: space-between;
+    margin: 25px;
   }
 }
 .footer {
@@ -245,20 +242,32 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-section {
-    border: 2px solid blue;
     flex-direction: column;
+    margin: 0 auto;
   }
 }
-.home .img-content {
+.home .content-section .text-content {
+  width: 48%;
+  padding-left: 1%;
+  padding-right: 0;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+.home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
 @media (max-width: 500px) {
-  .home .img-content {
+  .home .content-section .img-content {
     width: 100%;
   }
 }
-.home .img-content img {
+.home .content-section .img-content img {
   border-radius: 10px;
 }
 .inverse-content {
@@ -272,18 +281,22 @@ img {
   }
 }
 .inverse-content .text-content {
+  width: 48%;
   padding-left: 1%;
-  padding-right: 0;
+}
+.inverse-content h2 {
+  margin-top: 5%;
 }
 .img-content {
+  width: 48%;
   padding-right: 1%;
   padding-left: 0;
 }
 @media (max-width: 500px) {
   .img-content {
-    border: 2px solid purple;
     order: 2;
     width: 100%;
+    margin-left: 5%;
   }
 }
 .content-destination {
@@ -293,11 +306,11 @@ img {
 @media (max-width: 500px) {
   .content-destination {
     width: 95%;
+    margin-top: 5%;
   }
 }
 .content-destination img {
   border-radius: 10px;
-  border: 2px solid green;
 }
 @media (max-width: 500px) {
   .content-destination img {
@@ -326,7 +339,6 @@ img {
     width: 100%;
     margin-left: 2%;
     margin-right: 2%;
-    border: 2px solid red;
   }
 }
 #head {
