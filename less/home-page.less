@@ -6,12 +6,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
+    @media @mobile{
+ border:2px solid blue;
     }
+   
+   
+}
+
 
     .img-content {
       width: 48%;
@@ -41,6 +42,7 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+   
 
     img {
       border-radius: 10px;
@@ -56,9 +58,12 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
-  }
+    } //destination end
+
+
 }// home
+
+
 
 #head{
     display: flex;
@@ -76,8 +81,14 @@
   width:100%;
   margin-bottom:0;
 
+@media @mobile{
+  border:2px solid red;
+display:flex;
+}
+
   h1{
     margin-left:18%;
+
 } //end of h1
   
 } //top bar end
@@ -89,6 +100,12 @@
   width: 65%;
     margin-left:18%;
     margin-bottom:3%;
+
+    @media @mobile{
+      width:90%;
+      margin-right:5%;
+      margin-left:5%;
+    }
   
 }
 
@@ -98,4 +115,12 @@
   border-bottom: 2px dashed @navigation-border;
   width: 65%;
     margin: 0 auto 20px;
+
+    @media @mobile{
+      width:90%;
+    }
 }
+
+
+
+
