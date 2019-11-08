@@ -136,13 +136,6 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
-@media (max-width: 500px) {
-  html,
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-}
 h1,
 h2,
 h3,
@@ -175,11 +168,29 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.container .btn {
+  display: block;
+  background-color: teal;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 150px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+}
 @media (max-width: 500px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid green;
+  .container .btn {
+    display: block;
+    background-color: teal;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: 80%;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: white;
+    align-content: center;
   }
 }
 .navigation {
@@ -191,12 +202,29 @@ img {
   display: flex;
   margin-right: 15%;
 }
+@media (max-width: 500px) {
+  .navigation {
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    line-height: 2;
+  }
+}
 .navigation nav a {
   font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
   margin: 30px;
   color: black;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .navigation nav a {
+    margin: 17px;
+  }
 }
 .footer {
   width: 100%;
@@ -218,11 +246,17 @@ img {
 @media (max-width: 500px) {
   .home .content-section {
     border: 2px solid blue;
+    flex-direction: column;
   }
 }
 .home .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .img-content {
+    width: 100%;
+  }
 }
 .home .img-content img {
   border-radius: 10px;
@@ -231,20 +265,44 @@ img {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .inverse-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.inverse-content .img-content {
+.img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .img-content {
+    border: 2px solid purple;
+    order: 2;
+    width: 100%;
+  }
 }
 .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .content-destination {
+    width: 95%;
+  }
+}
 .content-destination img {
   border-radius: 10px;
+  border: 2px solid green;
+}
+@media (max-width: 500px) {
+  .content-destination img {
+    width: 100%;
+  }
 }
 .content-pick {
   padding-top: 30px;
@@ -252,9 +310,24 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .content-pick {
+    flex-direction: column;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
 .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .content-pick .destination {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 2px solid red;
+  }
 }
 #head {
   display: flex;
@@ -269,14 +342,13 @@ img {
   width: 100%;
   margin-bottom: 0;
 }
-@media (max-width: 500px) {
-  #head .top-bar {
-    border: 2px solid red;
-    display: flex;
-  }
-}
 #head .top-bar h1 {
   margin-left: 18%;
+}
+@media (max-width: 500px) {
+  #head .top-bar h1 {
+    margin: 0 auto;
+  }
 }
 .banner img {
   margin-top: 3%;

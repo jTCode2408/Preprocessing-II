@@ -8,11 +8,7 @@ html {
 
 html, body {
   font-family: 'Roboto', sans-serif;
-
-  @media @mobile {
-    display:flex;
-    flex-direction: column;
-  }
+  
  
 }
 
@@ -53,10 +49,15 @@ img {
   width: 100%;
   margin: 0 auto;
 
-@media @mobile{
-  display:flex;
-  flex-direction:column;
-border:2px solid green;
+.btn{
+  .custom-btn();
+
+  @media @mobile{
+    .custom-btn(@size:80%);
+    align-content:center;
+    
+
+  }
 }
   
 }
