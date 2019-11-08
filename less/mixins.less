@@ -7,3 +7,32 @@
     border-radius: 10px;
     color:@font-color;
 }
+
+.animate(@bg-color:red, @color: blue, @radius: 10%, @align: center, @font-size: 2.5rem, @height: 50px, @size: 75%){
+        background-color: @bg-color;
+        color: @color;
+        font-size:@font-size;
+        border-radius: @radius;
+        align-content: @align;
+        width: @size;
+        
+        -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+        -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+        transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+        height: @height;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	text-shadow: 0 0 1px rgba(130, 241, 2, 0.2), 0 1px 0 rgba(52, 204, 6, 0.2);
+	-webkit-transition: all 4s ease;
+	-moz-transition: all 4s ease;
+	-o-transition: all 5s ease;
+	transition: all 5s ease;
+    }
+    

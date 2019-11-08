@@ -169,19 +169,36 @@ img {
   margin: 0 auto;
 }
 .container .btn {
+  background-color: red;
+  color: blue;
+  font-size: 2.5rem;
+  border-radius: 10%;
+  align-content: center;
+  width: 75%;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  height: 50px;
   display: block;
-  background-color: #19bbbb;
-  width: 85%;
-  height: 45px;
-  font-size: 2rem;
-  border-radius: 10px;
-  color: white;
+  margin: 30px auto 0;
+  padding: 14px 15px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-shadow: 0 0 1px rgba(130, 241, 2, 0.2), 0 1px 0 rgba(52, 204, 6, 0.2);
+  -webkit-transition: all 4s ease;
+  -moz-transition: all 4s ease;
+  -o-transition: all 5s ease;
+  transition: all 5s ease;
 }
 @media (max-width: 500px) {
   .container .btn {
     display: block;
     background-color: #19bbbb;
-    width: 80%;
+    width: 85%;
     height: 45px;
     font-size: 2rem;
     border-radius: 10px;
